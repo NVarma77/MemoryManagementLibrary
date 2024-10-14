@@ -40,17 +40,17 @@ make clean
 ### Running memtest
 The memtest program runs a series of test cases to validate the correctness of the custom memory allocator.
 
-
+```bash
 ./memtest
-
+```
 Expected Output: The program will print messages indicating the progress and results of each test case, along with any error messages from the allocator.
 
 ### Running memgrind
 The memgrind program measures the performance of the allocator by running several test cases that simulate different memory allocation patterns.
 
-
+```bash
 ./memgrind
-
+```
 Expected Output: The program will output the total and average execution time for each test case, helping you assess the allocator's efficiency.
 
 ## Test Programs
