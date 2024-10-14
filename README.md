@@ -22,8 +22,7 @@ This project implements a custom memory allocator in C, providing `mymalloc` and
 ## Compilation Instructions
 To compile the programs, use the provided Makefile. Open a terminal in the project directory and run:
 
-bash
-Copy code
+
 make all
 
 This command compiles the following executables:
@@ -33,8 +32,7 @@ memgrind
 
 To clean up object files and executables:
 
-bash
-Copy code
+
 make clean
 
 ## Usage Instructions
@@ -42,8 +40,7 @@ make clean
 ### Running memtest
 The memtest program runs a series of test cases to validate the correctness of the custom memory allocator.
 
-bash
-Copy code
+
 ./memtest
 
 Expected Output: The program will print messages indicating the progress and results of each test case, along with any error messages from the allocator.
@@ -51,8 +48,7 @@ Expected Output: The program will print messages indicating the progress and res
 ### Running memgrind
 The memgrind program measures the performance of the allocator by running several test cases that simulate different memory allocation patterns.
 
-bash
-Copy code
+
 ./memgrind
 
 Expected Output: The program will output the total and average execution time for each test case, helping you assess the allocator's efficiency.
