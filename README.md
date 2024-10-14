@@ -22,7 +22,7 @@ This project implements a custom memory allocator in C, providing `mymalloc` and
 ## Compilation Instructions
 To compile the programs, use the provided Makefile. Open a terminal in the project directory and run:
 
-
+'''bash
 make all
 
 This command compiles the following executables:
