@@ -1,23 +1,30 @@
-# MemoryManagementLibrary
-Custom dynamic memory allocator in C with features for memory alignment and leak detection. Includes comprehensive test plans for optimized performance.
-Custom Memory Allocator (mymalloc)
-Introduction
-This project implements a custom memory allocator in C, providing mymalloc and myfree functions that mimic the behavior of the standard malloc and free. The allocator manages a fixed-size heap and includes mechanisms for memory allocation, deallocation, coalescing free blocks, and leak detection. Two test programs, memtest and memgrind, are provided to validate the allocator's correctness and measure its performance under various scenarios.
+# Custom Memory Allocator (mymalloc)
 
-Features
-Fixed-size Heap: Manages a heap of 4096 bytes.
-Custom Allocation Functions: Implements mymalloc(size_t size, char *file, int line) and myfree(void *ptr, char *file, int line).
-Memory Alignment: Ensures all allocations are aligned to 8-byte boundaries.
-Metadata Management: Uses metadata structures to track allocated and free memory blocks.
-Coalescing Free Blocks: Adjacent free blocks are merged to reduce fragmentation.
-Leak Detection: Reports memory leaks upon program termination using atexit().
-Files Included
-mymalloc.h: Header file with function declarations and macro definitions.
-mymalloc.c: Implementation of the custom memory allocator.
-memtest.c: Test program with various test cases to validate correctness.
-memgrind.c: Performance testing program that measures execution time of different allocation patterns.
-Makefile: Build script for easy compilation.
-README.md: Documentation and usage instructions for the project.
+## Introduction
+This project implements a custom memory allocator in C, providing `mymalloc` and `myfree` functions that mimic the behavior of the standard `malloc` and `free`. The allocator manages a fixed-size heap and includes mechanisms for memory allocation, deallocation, coalescing free blocks, and leak detection. Two test programs, `memtest` and `memgrind`, are provided to validate the allocator's correctness and measure its performance under various scenarios.
+
+## Features
+- **Fixed-size Heap**: Manages a heap of 4096 bytes.
+- **Custom Allocation Functions**: Implements `mymalloc(size_t size, char *file, int line)` and `myfree(void *ptr, char *file, int line)`.
+- **Memory Alignment**: Ensures all allocations are aligned to 8-byte boundaries.
+- **Metadata Management**: Uses metadata structures to track allocated and free memory blocks.
+- **Coalescing Free Blocks**: Adjacent free blocks are merged to reduce fragmentation.
+- **Leak Detection**: Reports memory leaks upon program termination using `atexit()`.
+
+## Files Included
+- `mymalloc.h`: Header file with function declarations and macro definitions.
+- `mymalloc.c`: Implementation of the custom memory allocator.
+- `memtest.c`: Test program with various test cases to validate correctness.
+- `memgrind.c`: Performance testing program that measures execution time of different allocation patterns.
+- `Makefile`: Build script for easy compilation.
+- `README.md`: Documentation and usage instructions for the project.
+
+## Compilation Instructions
+To compile the programs, use the provided Makefile. Open a terminal in the project directory and run:
+
+```bash
+make all
+
 Compilation Instructions
 To compile the programs, use the provided Makefile. Open a terminal in the project directory and run:
 
